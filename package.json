@@ -37,11 +37,11 @@
 			"editor/title": [
 				{
 					"command": "extension.showBackBtn",
-					"group": "navigation"
+					"group": "navigation@999998"
 				},
 				{
 					"command": "extension.showForwardBtn",
-					"group": "navigation"
+					"group": "navigation@999999"
 				}
 			]
 		}
