@@ -5,23 +5,23 @@ import * as vscode from 'vscode';
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "back-n-forth" is now active!');
-
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('extension.helloWorld', () => {
+	const navigateBack = vscode.commands.registerCommand('extension.showBackBtn', () => {
 		// The code you place here will be executed every time your command is executed
-
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World!');
+		vscode.commands.executeCommand('workbench.action.navigateBack');
 	});
 
-	context.subscriptions.push(disposable);
+	const navigateForward = vscode.commands.registerCommand('extension.showForwardBtn', () => {
+		// The code you place here will be executed every time your command is executed
+		// Display a message box to the user
+		vscode.commands.executeCommand('workbench.action.navigateForward');
+	});
+
+	context.subscriptions.push(navigateBack, navigateForward);
 }
 
 // this method is called when your extension is deactivated
-export function deactivate() {}
+export function deactivate() { }

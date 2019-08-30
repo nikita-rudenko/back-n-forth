@@ -2,7 +2,7 @@
 	"name": "back-n-forth",
 	"displayName": "Back & Forth",
 	"description": "A small extension that adds go back/forward buttons to the UI for easier navigation through recent files, just like in any web browser",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.37.0"
 	},
@@ -10,33 +10,58 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:extension.showBackBtn",
+		"onCommand:extension.showForwardBtn"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"command": "extension.showBackBtn",
+				"title": "Go Back",
+				"icon": {
+					"dark": "icons/arrow-left-dark.svg",
+					"light": "icons/arrow-left-light.svg"
+				}
+			},
+			{
+				"command": "extension.showForwardBtn",
+				"title": "Go Forward",
+				"icon": {
+					"dark": "icons/arrow-right-dark.svg",
+					"light": "icons/arrow-right-light.svg"
+				}
 			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^5.2.6",
-		"@types/node": "^10.12.21",
-		"@types/vscode": "^1.37.0",
-		"glob": "^7.1.4",
-		"mocha": "^6.1.4",
-		"typescript": "^3.3.1",
-		"tslint": "^5.12.1",
-		"vscode-test": "^1.0.2"
-	}
+		],
+		"menus": {
+			"editor/title": [
+				{
+					"command": "extension.showBackBtn",
+					"group": "navigation"
+				},
+				{
+					"command": "extension.showForwardBtn",
+					"group": "navigation"
+				}
+			]
+		}
+},
+"scripts": {
+	"vscode:prepublish": "npm run compile",
+	"compile": "tsc -p ./",
+	"watch": "tsc -watch -p ./",
+	"pretest": "npm run compile",
+	"test": "node ./out/test/runTest.js"
+},
+"devDependencies": {
+	"@types/glob": "^7.1.1",
+	"@types/mocha": "^5.2.6",
+	"@types/node": "^10.12.21",
+	"@types/vscode": "^1.37.0",
+	"glob": "^7.1.4",
+	"mocha": "^6.1.4",
+	"typescript": "^3.3.1",
+	"tslint": "^5.12.1",
+	"vscode-test": "^1.0.2"
+}
 }
