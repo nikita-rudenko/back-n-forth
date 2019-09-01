@@ -9,7 +9,7 @@ They do the same as these default shortcuts:
 
 ## Screenshot(s)
 
-![arrows location](img/example-01.png)
+![Arrows location](img/screenshots/screenshot-01.png)
 
 ## Release Notes
 
