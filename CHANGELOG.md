@@ -1,8 +1,8 @@
 # Change Log
 
-All notable changes to the "back-n-forth" extension will be documented in this file.
+## [0.2.0]
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Add ability to change icon style
 
 ## [0.1.1]
 
