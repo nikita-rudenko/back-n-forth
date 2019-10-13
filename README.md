@@ -25,11 +25,6 @@ They do the same as these default shortcuts:
 
 - Add ability to change icon style
 
-### 0.1.1
-
-- Changed description and changelog
-- Added screenshot
-
 ### 0.1.0
 
 - Initial release 🎉
