@@ -16,7 +16,7 @@
 	"icon": "img/icons/icon.png",
 	"publisher": "nick-rudenko",
 	"description": "Adds go back/forward buttons for easier navigation",
-	"version": "0.1.2",
+	"version": "0.2.0",
 	"engines": {
 		"vscode": "^1.37.0"
 	},
@@ -24,40 +24,80 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.showBackBtn",
-		"onCommand:extension.showForwardBtn"
+		"*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.showBackBtn",
+				"command": "extension.arrowBackBtn",
 				"title": "Go Back",
 				"icon": {
-					"dark": "img/svg/arrow-left-dark.svg",
-					"light": "img/svg/arrow-left-light.svg"
+					"dark": "/img/svg/arrows/arrow-left-dark.svg",
+					"light": "/img/svg/arrows/arrow-left-light.svg"
 				}
 			},
 			{
-				"command": "extension.showForwardBtn",
+				"command": "extension.arrowForwardBtn",
 				"title": "Go Forward",
 				"icon": {
-					"dark": "img/svg/arrow-right-dark.svg",
-					"light": "img/svg/arrow-right-light.svg"
+					"dark": "/img/svg/arrows/arrow-right-dark.svg",
+					"light": "/img/svg/arrows/arrow-right-light.svg"
+				}
+			},
+			{
+				"command": "extension.chevronBackBtn",
+				"title": "Go Back",
+				"icon": {
+					"dark": "/img/svg/chevrons/chevron-left-dark.svg",
+					"light": "/img/svg/chevrons/chevron-left-light.svg"
+				}
+			},
+			{
+				"command": "extension.chevronForwardBtn",
+				"title": "Go Forward",
+				"icon": {
+					"dark": "/img/svg/chevrons/chevron-right-dark.svg",
+					"light": "/img/svg/chevrons/chevron-right-light.svg"
 				}
 			}
 		],
 		"menus": {
 			"editor/title": [
 				{
-					"command": "extension.showBackBtn",
-					"group": "navigation@999998"
+					"command": "extension.arrowBackBtn",
+					"group": "navigation@999998",
+					"when": "config.back-n-forth.iconStyle == 'arrow'"
 				},
 				{
-					"command": "extension.showForwardBtn",
-					"group": "navigation@999999"
+					"command": "extension.arrowForwardBtn",
+					"group": "navigation@999999",
+					"when": "config.back-n-forth.iconStyle == 'arrow'"
+				},
+				{
+					"command": "extension.chevronBackBtn",
+					"group": "navigation@999998",
+					"when": "config.back-n-forth.iconStyle == 'chevron'"
+				},
+				{
+					"command": "extension.chevronForwardBtn",
+					"group": "navigation@999999",
+					"when": "config.back-n-forth.iconStyle == 'chevron'"
 				}
 			]
+		},
+		"configuration": {
+			"title": "Back & Forth",
+			"properties": {
+				"back-n-forth.iconStyle": {
+					"type": "string",
+					"default": "arrow",
+					"enum": [
+						"arrow",
+						"chevron"
+					]
+				}
+			}
 		}
 	},
 	"scripts": {
@@ -77,5 +117,6 @@
 		"typescript": "^3.3.1",
 		"tslint": "^5.12.1",
 		"vscode-test": "^1.0.2"
-	}
+	},
+	"dependencies": {}
 }
