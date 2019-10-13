@@ -1,6 +1,6 @@
-# Back & Forth README
+# Back & Forth
 
-This small extension for VSCode adds go back/forward buttons to the title bar for easier navigation through recent files. Just like arrows in any web browser.
+This small extension for VSCode adds go back/forward buttons to the title bar for easier navigation through recent edit locations and opened files.
 
 They do the same as these default shortcuts:
 
