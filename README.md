@@ -4,10 +4,10 @@ This small extension for VSCode adds go back/forward buttons to the title bar fo
 
 They do the same as these default shortcuts:
 
-| Command      | Keybindings (Windows/Linux) | Keybindings (Mac) |
-| ------------ | --------------------------- | ----------------- |
-| `Go back`    | `Ctrl + Alt + -`            | `⌃-`              |
-| `Go forward` | `Ctrl + Shift + -`          | `⌃⇧-`             |
+| Command                        | Keybindings (Windows) | Keybindings (Mac)     | Keybindings (Linux)   |
+| ------------------------------ | --------------------- | --------------------- | --------------------- |
+| `Go back`                      | `Alt + ←`             | `Ctrl + -`            | `Ctrl + Alt + -`      |
+| `Go forward`                   | `Alt + →`             | `Ctrl + Shift + -`    | `Ctrl + Shift + -`    |
 
 ## How it works
 
