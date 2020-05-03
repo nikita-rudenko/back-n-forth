@@ -23,6 +23,10 @@ They do the same as these default shortcuts:
 
 ## Release Notes
 
+### 0.3.0
+
+- Add "Go to the Last Edit Location"
+
 ### 0.2.0
 
 - Add ability to change icon style
