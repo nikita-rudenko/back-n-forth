@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.3.0]
+
+- Add Go to Last Edit Location button
+
 ## [0.2.1]
 
 - Various fixes and improvements
