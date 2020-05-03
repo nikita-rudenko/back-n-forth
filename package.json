@@ -16,7 +16,7 @@
 	"icon": "img/icons/icon.png",
 	"publisher": "nick-rudenko",
 	"description": "Adds go back/forward buttons for easier navigation",
-	"version": "0.2.1",
+	"version": "0.3.0",
 	"engines": {
 		"vscode": "^1.37.0"
 	},
@@ -60,10 +60,36 @@
 					"dark": "/img/svg/chevrons/chevron-right-dark.svg",
 					"light": "/img/svg/chevrons/chevron-right-light.svg"
 				}
+			},
+			{
+				"command": "extension.arrowToLastEditLocationBtn",
+				"title": "Go to Last Edit Location",
+				"icon": {
+					"dark": "/img/svg/arrows/arrow-left-asterisk-dark.svg",
+					"light": "/img/svg/arrows/arrow-left-asterisk-light.svg"
+				}
+			},
+			{
+				"command": "extension.chevronToLastEditLocationBtn",
+				"title": "Go to Last Edit Location",
+				"icon": {
+					"dark": "/img/svg/chevrons/chevron-left-asterisk-dark.svg",
+					"light": "/img/svg/chevrons/chevron-left-asterisk-light.svg"
+				}
 			}
 		],
 		"menus": {
 			"editor/title": [
+				{
+					"command": "extension.arrowToLastEditLocationBtn",
+					"group": "navigation@999997",
+					"when": "config.back-n-forth.iconStyle == 'arrow' && config.back-n-forth.withLastEditLocation == true"
+				},
+				{
+					"command": "extension.chevronToLastEditLocationBtn",
+					"group": "navigation@999997",
+					"when": "config.back-n-forth.iconStyle == 'chevron' && config.back-n-forth.withLastEditLocation == true"
+				},
 				{
 					"command": "extension.arrowBackBtn",
 					"group": "navigation@999998",
@@ -96,6 +122,11 @@
 						"arrow",
 						"chevron"
 					]
+				},
+				"back-n-forth.withLastEditLocation": {
+					"type": "boolean",
+					"default": false,
+					"description": "Adds an additional icon that returns to the last edit location"
 				}
 			}
 		}
@@ -113,9 +144,9 @@
 		"@types/node": "^10.12.21",
 		"@types/vscode": "^1.37.0",
 		"glob": "^7.1.4",
-		"mocha": "^6.1.4",
-		"typescript": "^3.3.1",
+		"mocha": "^7.1.2",
 		"tslint": "^5.12.1",
+		"typescript": "^3.3.1",
 		"vscode-test": "^1.0.2"
 	},
 	"dependencies": {}
