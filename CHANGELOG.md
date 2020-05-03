@@ -1,8 +1,9 @@
 # Change Log
 
-## [0.3.0]
+## [3.0.x]
 
 - Add Go to Last Edit Location button
+- Mess up semantic versioning
 
 ## [0.2.1]
 

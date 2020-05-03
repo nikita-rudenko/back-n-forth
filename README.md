@@ -23,9 +23,10 @@ They do the same as these default shortcuts:
 
 ## Release Notes
 
-### 0.3.0
+### 3.0.x
 
 - Add "Go to the Last Edit Location"
+- Mess up semantic versioning
 
 ### 0.2.0
 
