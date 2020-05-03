@@ -19,7 +19,14 @@ function setup(context: vscode.ExtensionContext) {
     }
   );
 
-  context.subscriptions.push(navigateBack, navigateForward);
+  const navigateToLastEditLocation = vscode.commands.registerCommand(
+    `extension.${iconStyle}ToLastEditLocationBtn`,
+    () => {
+      vscode.commands.executeCommand('workbench.action.navigateToLastEditLocation');
+    }
+  );
+
+  context.subscriptions.push(navigateBack, navigateForward, navigateToLastEditLocation);
 }
 
 export function activate(context: vscode.ExtensionContext) {
