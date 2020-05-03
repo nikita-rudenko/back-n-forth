@@ -15,9 +15,9 @@ They do the same as these default shortcuts:
 
 ## Settings
 
-| Name                     | Description                         |
-| ------------------------ | ----------------------------------- |
-| `back-n-forth.iconStyle` | Can be either `arrow` and `chevron` |
+| Name                     |                       | Options                 | Default   |
+| ------------------------ | --------------------- | ----------------------- | --------- |
+| `back-n-forth.iconStyle` | Changes type of icons | `"arrow"` / `"chevron"` | `"arrow"` |
 
 ## Release Notes
 
