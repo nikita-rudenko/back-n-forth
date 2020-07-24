@@ -1,6 +1,11 @@
 # Change Log
 
-## [3.0.x]
+## [3.0.3]
+
+- Add license
+- Update dependencies
+
+## [3.0.2]
 
 - Add Go to Last Edit Location button
 - Mess up semantic versioning
