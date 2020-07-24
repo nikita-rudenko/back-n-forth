@@ -17,7 +17,7 @@
 	"icon": "img/icons/icon.png",
 	"publisher": "nick-rudenko",
 	"description": "Adds go back/forward buttons for easier navigation",
-	"version": "3.0.2",
+	"version": "3.0.3",
 	"engines": {
 		"vscode": "^1.37.0"
 	},
