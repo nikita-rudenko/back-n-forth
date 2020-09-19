@@ -2,12 +2,12 @@
 	"name": "back-n-forth",
 	"displayName": "Back & Forth",
 	"author": {
-		"name": "Nick Rudenko",
+		"name": "Nikita Rudenko",
 		"email": "rdnkta@gmail.com"
 	},
 	"license": "MIT",
 	"repository": {
-		"url": "https://github.com/nick-rudenko/back-n-forth"
+		"url": "https://github.com/nikita-rudenko/back-n-forth"
 	},
 	"keywords": [
 		"navigation",
