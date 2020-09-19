@@ -21,6 +21,9 @@
 	"engines": {
 		"vscode": "^1.37.0"
 	},
+	"extensionKind": [
+		"ui"
+	],
 	"categories": [
 		"Other"
 	],
