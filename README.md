@@ -23,6 +23,10 @@ They do the same as these default shortcuts:
 
 ## Release Notes
 
+### 3.1.0
+
+- Add ability to use extension without installing on remote
+
 ### 3.0.x
 
 - Add "Go to the Last Edit Location"

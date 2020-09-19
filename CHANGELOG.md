@@ -1,5 +1,9 @@
 # Change Log
 
+## [3.1.0]
+
+- Add ability to use extension without installing on remote
+
 ## [3.0.3]
 
 - Add license
