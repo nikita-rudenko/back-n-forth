@@ -17,11 +17,14 @@
 	"icon": "img/icons/icon.png",
 	"publisher": "nick-rudenko",
 	"description": "Adds go back/forward buttons for easier navigation",
-	"version": "3.1.0",
+	"version": "3.1.1",
 	"engines": {
 		"vscode": "^1.37.0"
 	},
-	"extensionKind": ["ui", "workspace"],
+	"extensionKind": [
+		"ui",
+		"workspace"
+	],
 	"categories": [
 		"Other"
 	],
